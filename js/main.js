@@ -1,13 +1,14 @@
-var before = document.getElementById("before");
-var liner = document.getElementById("liner");
-var command = document.getElementById("typer");
-var textarea = document.getElementById("texter");
-var terminal = document.getElementById("terminal");
+// Global letiables
+let before = document.getElementById("before");
+let liner = document.getElementById("liner");
+let command = document.getElementById("typer");
+let textarea = document.getElementById("texter");
+let terminal = document.getElementById("terminal");
 
-var git = 0;
-var pw = false;
+let git = 0;
+let pw = false;
 let pwd = false;
-var commands = [];
+let commands = [];
 
 setTimeout(function() {
     loopLines(banner, "", 80);
@@ -163,7 +164,7 @@ function newTab(link) {
 }
 
 function addLine(text, style, time) {
-    var t = "";
+    let t = "";
     for (let i = 0; i < text.length; i++) {
         if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
             t += "&nbsp;&nbsp;";
@@ -173,7 +174,7 @@ function addLine(text, style, time) {
         }
     }
     setTimeout(function() {
-        var next = document.createElement("p");
+        let next = document.createElement("p");
         next.innerHTML = t;
         next.className = style;
 

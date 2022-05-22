@@ -1,10 +1,12 @@
-// var youtube = "https://www.youtube.com/fknight/";
-// var twitter = "https://www.twitter.com/forrestpknight/";
-var password = "jzcodes";
-var linkedin = "https://www.linkedin.com/in/jason-zhang-j17/";
-var instagram = "https://www.instagram.com/j.asonzhan.g/";
-var github = "https://github.com/jjz17/";
-var email = 'mailto:jasonjzhang17@gmail.com';
+// let youtube = "https://www.youtube.com/fknight/";
+// let twitter = "https://www.twitter.com/forrestpknight/";
+
+// Global letiables
+let password = "jzcodes";
+let linkedin = "https://www.linkedin.com/in/jason-zhang-j17/";
+let instagram = "https://www.instagram.com/j.asonzhan.g/";
+let github = "https://github.com/jjz17/";
+let email = 'mailto:jasonjzhang17@gmail.com';
 
 whois = [
     "<br>",
@@ -57,7 +59,7 @@ help = [
     "<br>",
     '<span class="command">whois</span>          Who is Forrest?',
     '<span class="command">whoami</span>         Who are you?',
-    '<span class="command">video</span>          View YouTube videos',
+    // '<span class="command">video</span>          View YouTube videos',
     '<span class="command">social</span>         Display social networks',
     '<span class="command">secret</span>         Find the password',
     '<span class="command">projects</span>       View coding projects',
