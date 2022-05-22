@@ -1,10 +1,10 @@
-var youtube = "https://www.youtube.com/fknight/";
-var twitter = "https://www.twitter.com/forrestpknight/";
-var password = "fkcodes";
-var linkedin = "https://www.linkedin.com/in/forrestpknight/";
-var instagram = "https://www.instagram.com/forrestpknight/";
-var github = "https://github.com/forrestknight/";
-var email = 'mailto:forrest@fkcodes.com';
+// var youtube = "https://www.youtube.com/fknight/";
+// var twitter = "https://www.twitter.com/forrestpknight/";
+var password = "jzcodes";
+var linkedin = "https://www.linkedin.com/in/jason-zhang-j17/";
+var instagram = "https://www.instagram.com/j.asonzhan.g/";
+var github = "https://github.com/jjz17/";
+var email = 'mailto:jasonjzhang17@gmail.com';
 
 whois = [
     "<br>",
@@ -33,11 +33,11 @@ whoami = [
 
 social = [
     "<br>",
-    'youtube        <a href="' + youtube + '" target="_blank">youtube/fknight' + "</a>",
-    'twitter        <a href="' + twitter + '" target="_blank">twitter/forrestpknight' + '</a>',
-    'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/forrestpknight' + "</a>",
-    'instagram      <a href="' + instagram + '" target="_blank">instagram/forrestpknight' + '</a>',
-    'github         <a href="' + github + '" target="_blank">github/forrestknight' + "</a>",
+    // 'youtube        <a href="' + youtube + '" target="_blank">youtube/fknight' + "</a>",
+    // 'twitter        <a href="' + twitter + '" target="_blank">twitter/forrestpknight' + '</a>',
+    'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/jason-zhang-j17' + "</a>",
+    'instagram      <a href="' + instagram + '" target="_blank">instagram/j.asonzhan.g' + '</a>',
+    'github         <a href="' + github + '" target="_blank">github/jjz17' + "</a>",
     "<br>"
 ];
 
