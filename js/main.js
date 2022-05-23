@@ -23,22 +23,28 @@ console.log(
 );
 console.log("%cPassword: '" + password + "' - I wonder what it does?ðŸ¤”", "color: grey");
 
-//init
+// Init
 textarea.value = "";
 command.innerHTML = textarea.value;
 
+// Track and respond to key presses
 function enterKey(e) {
+    // 181: audio volume mute
     if (e.keyCode == 181) {
         document.location.reload(true);
     }
     if (pw) {
         let et = "*";
         let w = textarea.value.length;
+        // Hide password with * characters
         command.innerHTML = et.repeat(w);
+        // If the password has been entered correctly, toggle pwd to true
         if (textarea.value === password) {
             pwd = true;
         }
+        // 13: enter
         if (pwd && e.keyCode == 13) {
+            // Display the secret
             loopLines(secret, "color2 margin", 120);
             command.innerHTML = "";
             textarea.value = "";
@@ -61,11 +67,13 @@ function enterKey(e) {
             command.innerHTML = "";
             textarea.value = "";
         }
+        // 38: arrow up
         if (e.keyCode == 38 && git != 0) {
             git -= 1;
             textarea.value = commands[git];
             command.innerHTML = textarea.value;
         }
+        // 40: arrow down
         if (e.keyCode == 40 && git != commands.length) {
             git += 1;
             if (commands[git] === undefined) {
@@ -78,6 +86,7 @@ function enterKey(e) {
     }
 }
 
+// Switch statement to handle commands
 function commander(cmd) {
     switch (cmd.toLowerCase()) {
         case "help":
@@ -157,16 +166,19 @@ function commander(cmd) {
     }
 }
 
+// Opens the given link in a new tab in the browser
 function newTab(link) {
     setTimeout(function() {
         window.open(link, "_blank");
     }, 500);
 }
 
+// Renders a new line with the given text, style, and time delay to the terminal display
 function addLine(text, style, time) {
     let t = "";
     for (let i = 0; i < text.length; i++) {
         if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
+            // Add non-breaking spaces to render double space characters in browser
             t += "&nbsp;&nbsp;";
             i++;
         } else {
@@ -174,16 +186,24 @@ function addLine(text, style, time) {
         }
     }
     setTimeout(function() {
+        // Create a p-tag element and add text and style
         let next = document.createElement("p");
         next.innerHTML = t;
         next.className = style;
 
+        // Insert the created p-tag in front of the before a-tag
         before.parentNode.insertBefore(next, before);
 
+        // Scrolls the window along with text rendering for smooth transition
         window.scrollTo(0, document.body.offsetHeight);
     }, time);
 }
 
+// Dynamically render lines
+// name: array of text to render
+// style: styling of text
+// time: ms of delay
+// Loops through each item of the given text array
 function loopLines(name, style, time) {
     name.forEach(function(item, index) {
         addLine(item, style, index * time);
