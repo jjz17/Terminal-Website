@@ -4,7 +4,8 @@ body {
     min-height: 99%;
     width: 100%;
     min-width: 550px;
-    color: #519975;
+    /* color: #519975; */
+    color: #258EC5;
     background: #211D1B;
     font-family: cursor, monospace;
     overflow-x: hidden;
@@ -124,7 +125,8 @@ p {
 }
 
 .color2 {
-    color: #B89076;
+    /* color: #B89076; */
+    color: #874BCE;
 }
 
 .command {
