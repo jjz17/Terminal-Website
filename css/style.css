@@ -8,7 +8,8 @@ body {
     color: #258EC5;
     background: #211D1B;
     font-family: cursor, monospace;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow-wrap: break-word;
 }
 
 .light {
@@ -107,7 +108,8 @@ p {
     display: block;
     line-height: 1.3em;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-wrap: break-word;
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.05em;
