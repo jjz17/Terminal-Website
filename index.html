@@ -24,17 +24,18 @@
 
 <body>
     <div id="terminal">
-        <a id="before "></a>
+        <a id="before"></a>
     </div>
-    <div id="command " onclick="$( 'texter').focus(); ">
-        <textarea type="text " id="texter " onkeyup="typeIt(this, event) " onkeydown="typeIt(this, event); moveIt(this.value.length, event) " onkeypress="typeIt(this, event); " autofocus></textarea>
-        <div id="liner ">
-            <span id="typer "></span><b class="cursor " id="cursor ">█</b>
+    <div id="command" onclick="$('texter').focus();">
+        <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
+        <div id="liner">
+            <span id="typer"></span><b class="cursor" id="cursor">█</b>
         </div>
     </div>
-    <script src="js/caret.js "></script>
-    <script src="js/commands.js "></script>
-    <script src="js/main.js "></script>
+    <script src="js/caret.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

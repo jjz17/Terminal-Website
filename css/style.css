@@ -8,8 +8,16 @@ body {
     color: #258EC5;
     background: #211D1B;
     font-family: cursor, monospace;
-    /* overflow-x: hidden; */
     overflow-wrap: break-word;
+}
+
+
+/* For screens at least 1000px wide */
+
+@media (min-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
 }
 
 .light {
