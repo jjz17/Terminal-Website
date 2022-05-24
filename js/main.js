@@ -181,6 +181,11 @@ function newTab(link) {
 
 // Renders a new line with the given text, style, and time delay to the terminal display
 function addLine(text, style, time) {
+    if (toggle) {
+        time = 0;
+        style = `${style} no-animation`
+    }
+
     let t = "";
     for (let i = 0; i < text.length; i++) {
         if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
@@ -210,12 +215,6 @@ function addLine(text, style, time) {
 // style: styling of text
 // time: ms of delay
 // Loops through each item of the given text array
-// function loopLines(name, style, time) {
-//     name.forEach(function(item, index) {
-//         addLine(item, style, index * time);
-//     });
-// }
-
 function loopLines(name, style, time) {
     // Render with animation if toggle is on false
     if (!toggle) {
