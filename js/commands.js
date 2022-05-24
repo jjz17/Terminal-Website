@@ -1,7 +1,7 @@
 // let youtube = "https://www.youtube.com/fknight/";
 // let twitter = "https://www.twitter.com/forrestpknight/";
 
-// Global letiables
+// Global variables
 let password = "jzcodes";
 let linkedin = "https://www.linkedin.com/in/jason-zhang-j17/";
 let instagram = "https://www.instagram.com/j.asonzhan.g/";
@@ -68,6 +68,8 @@ help = [
     '<span class="command">email</span>          Do not email me',
     '<span class="command">clear</span>          Clear terminal',
     '<span class="command">banner</span>         Display the header',
+    '<span class="command">anim</span>           Toggle text animation',
+    '<span class="command">mode</span>           Toggle light/dark mode',
     "<br>",
 ];
 

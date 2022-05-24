@@ -1,4 +1,4 @@
-// Global letiables
+// Global variables
 let before = document.getElementById("before");
 let liner = document.getElementById("liner");
 let command = document.getElementById("typer");
@@ -8,7 +8,7 @@ let terminal = document.getElementById("terminal");
 let git = 0;
 let pw = false;
 let pwd = false;
-let toggle = false;
+let animation = true;
 let commands = [];
 
 let body = document.body;
@@ -163,10 +163,15 @@ function commander(cmd) {
             addLine("Opening GitHub...", "color2", 0);
             newTab(github);
             break;
-        case "toggle":
-            toggle = !toggle
-            addLine("Toggling settings...", "color2", 0);
-            addLine(`Settings are on ${toggle}`, "color2", 0);
+        case "anim":
+            animation = !animation;
+            state = "on";
+
+            if (!animation) {
+                state = "off";
+            }
+
+            addLine(`Toggling settings...animations are ${state}`, "color2 ", 0);
             break;
         case "mode":
             body.classList.toggle("light");
@@ -189,7 +194,7 @@ function newTab(link) {
 
 // Renders a new line with the given text, style, and time delay to the terminal display
 function addLine(text, style, time) {
-    if (toggle) {
+    if (!animation) {
         time = 0;
         style = `${style} no-animation`
     }
@@ -225,13 +230,13 @@ function addLine(text, style, time) {
 // Loops through each item of the given text array
 function loopLines(name, style, time) {
     // Render with animation if toggle is on false
-    if (!toggle) {
+    if (!animation) {
         name.forEach(function(item, index) {
-            addLine(item, style, index * time);
+            addLine(item, style, 0);
         });
     } else {
         name.forEach(function(item, index) {
-            addLine(item, style, 0);
+            addLine(item, style, index * time);
         });
     }
 }
