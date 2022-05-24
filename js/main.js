@@ -21,10 +21,10 @@ setTimeout(function() {
 window.addEventListener("keyup", enterKey);
 
 console.log(
-    "%cYou hacked my password!ðŸ˜ ",
+    "You hacked my password! ",
     "color: #04ff00; font-weight: bold; font-size: 24px;"
 );
-console.log("%cPassword: '" + password + "' - I wonder what it does?ðŸ¤”", "color: grey");
+console.log("Password: " + password + " - I wonder what it does?", "color: grey");
 
 // Init
 textarea.value = "";
@@ -98,15 +98,15 @@ function commander(cmd) {
         case "whois":
             loopLines(whois, "color2 margin", 80);
             break;
-        case "whoami":
-            loopLines(whoami, "color2 margin", 80);
-            break;
-        case "video":
-            addLine("Opening YouTube...", "color2", 80);
-            newTab(youtube);
-            break;
+            // case "whoami":
+            //     loopLines(whoami, "color2 margin", 80);
+            //     break;
+            // case "video":
+            //     addLine("Opening YouTube...", "color2", 80);
+            //     newTab(youtube);
+            //     break;
         case "sudo":
-            addLine("Oh no, you're not admin...", "color2", 80);
+            addLine("Wait, you're not admin...", "color2", 80);
             setTimeout(function() {
                 window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
             }, 1000);
@@ -122,7 +122,7 @@ function commander(cmd) {
             loopLines(projects, "color2 margin", 80);
             break;
         case "password":
-            addLine("<span class=\"inherit\"> Lol! You're joking, right? You\'re gonna have to try harder than that!ðŸ˜‚</span>", "error", 100);
+            addLine("<span class=\"inherit\"> You\'re gonna have to try harder than that!</span>", "error", 100);
             break;
         case "history":
             addLine("<br>", "", 0);
@@ -130,7 +130,7 @@ function commander(cmd) {
             addLine("<br>", "command", 80 * commands.length + 50);
             break;
         case "email":
-            addLine('Opening mailto:<a href="mailto:forrest@fkcodes.com">forrest@fkcodes.com</a>...', "color2", 80);
+            addLine('Opening mailto:<a href="mailto:jasonjzhang17@gmail.com">jasonjzhang17@gmail.com</a>...', "color2", 80);
             newTab(email);
             break;
         case "clear":
@@ -143,14 +143,14 @@ function commander(cmd) {
             loopLines(banner, "", 80);
             break;
             // socials
-        case "youtube":
-            addLine("Opening YouTube...", "color2", 80);
-            newTab(youtube);
-            break;
-        case "twitter":
-            addLine("Opening Twitter...", "color2", 0);
-            newTab(twitter);
-            break;
+            // case "youtube":
+            //     addLine("Opening YouTube...", "color2", 80);
+            //     newTab(youtube);
+            //     break;
+            // case "twitter":
+            //     addLine("Opening Twitter...", "color2", 0);
+            //     newTab(twitter);
+            //     break;
         case "linkedin":
             addLine("Opening LinkedIn...", "color2", 0);
             newTab(linkedin);
@@ -178,6 +178,10 @@ function commander(cmd) {
             let index = document.getElementsByClassName("index")[0];
             index.classList.toggle("index-light");
             addLine("Switching mode...", "color2", 0);
+            break;
+        case "other":
+            addLine("Opening my other site...", "color2", 0);
+            newTab(otherSite);
             break;
         default:
             addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
