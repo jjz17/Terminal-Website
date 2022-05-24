@@ -57,7 +57,7 @@ projects = [
 
 help = [
     "<br>",
-    '<span class="command">whois</span>          Who is Forrest?',
+    '<span class="command">whois</span>          Who is Jason?',
     '<span class="command">whoami</span>         Who are you?',
     // '<span class="command">video</span>          View YouTube videos',
     '<span class="command">social</span>         Display social networks',
@@ -79,7 +79,7 @@ banner = [
     "██   ██║██╔══██║╚════██║██║   ██║██║╚██╗██║     ███╔╝  ██╔══██║██╔══██║██║╚██╗██║██║   ██║",
     "╚█████╔╝██║  ██║███████║╚██████╔╝██║ ╚████║    ███████╗██║  ██║██║  ██║██║ ╚████║╚██████╔╝",
     " ╚════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ",
-    "                                                                                   © 2022",
+    "                                                                                  © 2022",
     '<span class="color2">Welcome to my interactive web terminal.</span>',
     "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
 ];

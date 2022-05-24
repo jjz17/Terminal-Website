@@ -8,6 +8,7 @@ let terminal = document.getElementById("terminal");
 let git = 0;
 let pw = false;
 let pwd = false;
+let toggle = false;
 let commands = [];
 
 setTimeout(function() {
@@ -159,6 +160,11 @@ function commander(cmd) {
         case "github":
             addLine("Opening GitHub...", "color2", 0);
             newTab(github);
+            break;
+        case "toggle":
+            toggle = !toggle
+            addLine("Toggling settings...", "color2", 0)
+            addLine(`Settings are on ${toggle}`, "color2", 0)
             break;
         default:
             addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
