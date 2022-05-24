@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+.light {
+    background: rgb(222, 216, 216)
+}
+
  ::selection {
     color: #211830;
     /* background-color: #519975; */
@@ -129,6 +133,10 @@ p {
 
 .index {
     color: #DCDCCC;
+}
+
+.index-light {
+    color: rgb(36, 36, 36)
 }
 
 .color2 {

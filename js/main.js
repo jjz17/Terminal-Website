@@ -11,6 +11,8 @@ let pwd = false;
 let toggle = false;
 let commands = [];
 
+let body = document.body;
+
 setTimeout(function() {
     loopLines(banner, "", 80);
     textarea.focus();
@@ -163,8 +165,14 @@ function commander(cmd) {
             break;
         case "toggle":
             toggle = !toggle
-            addLine("Toggling settings...", "color2", 0)
-            addLine(`Settings are on ${toggle}`, "color2", 0)
+            addLine("Toggling settings...", "color2", 0);
+            addLine(`Settings are on ${toggle}`, "color2", 0);
+            break;
+        case "mode":
+            body.classList.toggle("light");
+            let index = document.getElementsByClassName("index")[0];
+            index.classList.toggle("index-light");
+            addLine("Switching mode...", "color2", 0);
             break;
         default:
             addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
