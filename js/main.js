@@ -210,8 +210,21 @@ function addLine(text, style, time) {
 // style: styling of text
 // time: ms of delay
 // Loops through each item of the given text array
+// function loopLines(name, style, time) {
+//     name.forEach(function(item, index) {
+//         addLine(item, style, index * time);
+//     });
+// }
+
 function loopLines(name, style, time) {
-    name.forEach(function(item, index) {
-        addLine(item, style, index * time);
-    });
+    // Render with animation if toggle is on false
+    if (!toggle) {
+        name.forEach(function(item, index) {
+            addLine(item, style, index * time);
+        });
+    } else {
+        name.forEach(function(item, index) {
+            addLine(item, style, 0);
+        });
+    }
 }

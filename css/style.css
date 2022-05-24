@@ -78,7 +78,7 @@ b {
 }
 
 #liner::before {
-    /* color: #519975; */
+    /* color: #519975;history */
     color: #258EC5;
     content: "visitor@jasonzhang.com:~$";
 }
