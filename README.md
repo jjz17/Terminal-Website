@@ -10,3 +10,6 @@ https://jjz17.github.io/Terminal-Website/
 
 ## Keycode table
 https://www.toptal.com/developers/keycode/table-of-all-keycodes
+
+## Bugs
+Bug with mode command stuck in the terminal
