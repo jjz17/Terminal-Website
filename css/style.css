@@ -4,19 +4,20 @@ body {
     min-height: 99%;
     width: 100%;
     min-width: 550px;
-    /* color: #519975; */
     color: #258EC5;
     background: #211D1B;
     font-family: cursor, monospace;
+    font-size: 2vw;
     overflow-wrap: break-word;
 }
 
 
-/* For screens at least 1000px wide */
+/* For screens at least 450px wide */
 
-@media (min-width: 1000px) {
+@media (min-width: 450px) {
     body {
         overflow-x: hidden;
+        font-size: 1.5vw
     }
 }
 
@@ -26,13 +27,11 @@ body {
 
  ::selection {
     color: #211830;
-    /* background-color: #519975; */
     background-color: #258EC5;
 }
 
  ::-moz-selection {
     color: #211830;
-    /* background-color: #519975; */
     background-color: #258EC5;
     ;
 }
@@ -51,9 +50,8 @@ b {
 /* Cursor Start */
 
 .cursor {
-    font-size: 12px;
-    /* color: #73ABAD;
-    background-color: #73ABAD; */
+    font-size: 14px;
+    /* font-size: 1vw; */
     color: #258EC5;
     background-color: #258EC5;
     position: relative;
@@ -78,7 +76,6 @@ b {
 #command {
     cursor: text;
     height: 50px;
-    /* color: #73ABAD; */
     color: #258EC5;
 }
 
@@ -91,7 +88,6 @@ b {
 }
 
 #liner::before {
-    /* color: #519975;history */
     color: #258EC5;
     content: "visitor@jasonzhang.com:~$";
 }
@@ -153,14 +149,11 @@ p {
 }
 
 .color2 {
-    /* color: #B89076; */
     color: #b77cff;
 }
 
 .command {
-    /* color: #73ABAD; */
     color: #258EC5;
-    /* text-shadow: 0 0 5px #73ABAD; */
     text-shadow: 0 0 5px #258EC5;
 }
 
@@ -182,7 +175,6 @@ a {
 }
 
 a:hover {
-    /* background: #73ABAD; */
     background: #258EC5;
     color: #211830;
 }

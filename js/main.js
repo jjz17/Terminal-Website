@@ -20,11 +20,8 @@ setTimeout(function() {
 
 window.addEventListener("keyup", enterKey);
 
-console.log(
-    "You hacked my password! ",
-    "color: #04ff00; font-weight: bold; font-size: 24px;"
-);
-console.log("Password: " + password + " - I wonder what it does?", "color: grey");
+console.log("You hacked my password! ");
+console.log("Password: " + password + " - I wonder what it does?");
 
 // Init
 textarea.value = "";
@@ -98,13 +95,6 @@ function commander(cmd) {
         case "whois":
             loopLines(whois, "color2 margin", 80);
             break;
-            // case "whoami":
-            //     loopLines(whoami, "color2 margin", 80);
-            //     break;
-            // case "video":
-            //     addLine("Opening YouTube...", "color2", 80);
-            //     newTab(youtube);
-            //     break;
         case "sudo":
             addLine("Wait, you're not admin...", "color2", 80);
             setTimeout(function() {
@@ -143,14 +133,6 @@ function commander(cmd) {
             loopLines(banner, "", 80);
             break;
             // socials
-            // case "youtube":
-            //     addLine("Opening YouTube...", "color2", 80);
-            //     newTab(youtube);
-            //     break;
-            // case "twitter":
-            //     addLine("Opening Twitter...", "color2", 0);
-            //     newTab(twitter);
-            //     break;
         case "linkedin":
             addLine("Opening LinkedIn...", "color2", 0);
             newTab(linkedin);

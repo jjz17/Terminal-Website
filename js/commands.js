@@ -1,6 +1,3 @@
-// let youtube = "https://www.youtube.com/fknight/";
-// let twitter = "https://www.twitter.com/forrestpknight/";
-
 // Global variables
 let password = "passw0rd";
 let linkedin = "https://www.linkedin.com/in/jason-zhang-j17/";
@@ -27,8 +24,6 @@ whoami = [
 
 social = [
     "<br>",
-    // 'youtube        <a href="' + youtube + '" target="_blank">youtube/fknight' + "</a>",
-    // 'twitter        <a href="' + twitter + '" target="_blank">twitter/forrestpknight' + '</a>',
     'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/jason-zhang-j17' + "</a>",
     'instagram      <a href="' + instagram + '" target="_blank">instagram/j.asonzhan.g' + '</a>',
     'github         <a href="' + github + '" target="_blank">github/jjz17' + "</a>",
@@ -50,14 +45,12 @@ projects = [
 help = [
     "<br>",
     '<span class="command">whois</span>          Who is Jason?',
-    // '<span class="command">whoami</span>         Who are you?',
-    // '<span class="command">video</span>          View YouTube videos',
     '<span class="command">social</span>         Display social networks',
     '<span class="command">secret</span>         Find the password',
     '<span class="command">projects</span>       View coding projects',
     '<span class="command">history</span>        View command history',
     '<span class="command">help</span>           You already know what this does',
-    '<span class="command">email</span>          Do not email me',
+    '<span class="command">email</span>          How to contact me',
     '<span class="command">clear</span>          Clear terminal',
     '<span class="command">banner</span>         Display the header',
     '<span class="command">anim</span>           Toggle text animation',
