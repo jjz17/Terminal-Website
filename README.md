@@ -2,6 +2,7 @@
 Personal portfolio website inspired by Forrest Knight's work.
 
 ## Ideas
+Change tex sizes to be in terms of vw (7vw) instead of px
 Implement cd and ls commands
 Implement commands to toggle speed/style of animation
 
