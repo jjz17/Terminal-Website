@@ -92,6 +92,10 @@ b {
     content: "visitor@jasonzhang.com:~$";
 }
 
+#liner.admin::before {
+    content: "admin@jasonzhang.com:~$";
+}
+
 #liner.password::before {
     content: "Password:";
 }

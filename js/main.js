@@ -6,6 +6,7 @@ let textarea = document.getElementById("texter");
 let terminal = document.getElementById("terminal");
 
 let git = 0;
+id = "visitor@jasonzhang.com:~$ "
 let pw = false;
 let pwd = false;
 let animation = true;
@@ -63,7 +64,7 @@ function enterKey(e) {
         if (e.keyCode == 13) {
             commands.push(command.innerHTML);
             git = commands.length;
-            addLine("visitor@jasonzhang.com:~$ " + command.innerHTML, "no-animation", 0);
+            addLine(id + command.innerHTML, "no-animation", 0);
             commander(command.innerHTML.toLowerCase());
             command.innerHTML = "";
             textarea.value = "";
@@ -175,6 +176,8 @@ function commander(cmd) {
             break;
         case "hire-me":
             admin = true;
+            id = "admin@jasonzhang.com:~$ ";
+            liner.classList.add("admin")
             addLine("Welcome, admin...", "color2", 0);
             break;
         default:
