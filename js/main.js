@@ -99,7 +99,7 @@ function commander(cmd) {
             break;
         case "sudo":
             if (admin) {
-                addLine("You win!", "color2", 80);
+                addLine("You win, here's a cookie 🍪!", "color2", 80);
             } else {
                 addLine("Wait, you're not admin...", "color2", 80);
                 setTimeout(function() {
