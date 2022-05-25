@@ -112,11 +112,14 @@ b {
 
 /* Cursor End */
 
+
+/* The overflow: hidden attribute determines whether the screen is mobile friendly */
+
 p {
     display: block;
     line-height: 1.3em;
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     overflow-wrap: break-word;
     white-space: nowrap;
     margin: 0;
