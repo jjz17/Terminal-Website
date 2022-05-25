@@ -9,6 +9,7 @@ let git = 0;
 let pw = false;
 let pwd = false;
 let animation = true;
+let admin = false;
 let commands = [];
 
 let body = document.body;
@@ -96,10 +97,14 @@ function commander(cmd) {
             loopLines(whois, "color2 margin", 80);
             break;
         case "sudo":
-            addLine("Wait, you're not admin...", "color2", 80);
-            setTimeout(function() {
-                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-            }, 1000);
+            if (admin) {
+                addLine("You win!", "color2", 80);
+            } else {
+                addLine("Wait, you're not admin...", "color2", 80);
+                setTimeout(function() {
+                    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+                }, 1000);
+            }
             break;
         case "social":
             loopLines(social, "color2 margin", 80);
@@ -164,6 +169,13 @@ function commander(cmd) {
         case "other":
             addLine("Opening my other site...", "color2", 0);
             newTab(otherSite);
+            break;
+        case "pwd":
+            addLine("/Users/visitor/admin-command:hire-me", "color2", 0);
+            break;
+        case "hire-me":
+            admin = true;
+            addLine("Welcome, admin...", "color2", 0);
             break;
         default:
             addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
